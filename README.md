@@ -65,5 +65,5 @@
 
 - It is a tool that allows the visualization of an attacker's modus operandi. It also allows the generation of security exercises using this [web site](https://mitre-attack.github.io/attack-navigator/).
 
-- Cet outil nous permet de créer autant de couche que l'on souhaite. De plus nous pouvons combiner les couches afin d'étudier les outils ou les acteurs de la menaces.
+- Cet outil nous permet de créer autant de couches que l'on souhaite. De plus nous pouvons combiner les couches afin d'étudier les outils ou les acteurs de la menace.
 
