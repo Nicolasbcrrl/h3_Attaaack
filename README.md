@@ -65,5 +65,36 @@
 
 - It is a tool that allows the visualization of an attacker's modus operandi. It also allows the generation of security exercises using this [web site](https://mitre-attack.github.io/attack-navigator/).
 
-- Cet outil nous permet de créer autant de couches que l'on souhaite. De plus nous pouvons combiner les couches afin d'étudier les outils ou les acteurs de la menace.
+- This tool allows us to create as many layers as we want. Moreover, we can combine the layers in order to study the tools or the actors of the threat.
+
+### Mapping with ATT&CK
+
+- Formbook is an infostealer that was first mentioned in 2016 on a hacking forum. It has been found in attacks against South Korea and the United States. 
+
+- Formbook is used by attackers like SWEED and Cobalt.
+
+- According to researcher Gabriela Nicolao, Forbook is more than just a keylogger. She calls it "browser logger software". This tool can steal information before it reaches the server by bypassing HTTPS encryption. It remains effective even if the user uses a numeric keypad, an autofill system or uses copy and paste.
+
+- Formbook has a monitor that allows its owner to see the victim's stolen information, screenshots and selfie information.
+
+When mapping an attack using the Formbook tool, we can illustrate it as follows :
+
+1. Credential Acess : Steals autification data
+- Credentials from Password Stores
+- Credentials from Web Browsers
+- Input Capture
+- Keylogging
+
+2. Collection : Keylog of the victim's information (copy and paste, automatic filling, physical or virtual keyboard)
+- Input Capture
+- Keylogging
+
+3. Collection : Obtaining information from the victim by taking screenshots
+- Screen Capture
+
+## Sources
+
+[Chapter 4: Mapping the Adversary](https://www.oreilly.com/library/view/practical-threat-intelligence/9781838556372/B13376_04_Final_SK_ePub.xhtml#_idParaDest-75)
+
+------------
 
