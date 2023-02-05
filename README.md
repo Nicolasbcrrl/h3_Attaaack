@@ -48,11 +48,6 @@
 
 - At the time of writing, the author says that there are 183 techniques and more or less 372 sub-techniques.
 
-### Procedure
-
-- The procedure is defined by the way the attacker implements the different techniques and sub-techniques to carry out his attack against the victim. 
-- A procedure can be concerned one or more techniques and sub-techniques.
-
 ### The ATT&CK Matrix
 
 - The ATT&CK is a Matrix that allows to have an overview of the different tactics and techniques that concern them.
@@ -98,3 +93,38 @@ When mapping an attack using the Formbook tool, we can illustrate it as follows 
 
 ------------
 
+## MITRE | ATT&CK
+
+### Define tactic and give an example
+
+A tactic represents the set of thoughts and techniques, which the perpetrator of the aggression has implemented to achieve his objective. As mentioned above, there are 14 tactics in the model proposed by the ATT&CK Framework. Each of these tactics is linked to an objective. 
+
+#### Exfiltration
+
+This tactic brings together all the techniques used by attackers to extract data from the victim's environment.
+
+Once the attacker has collected the victim's data, in order not to get caught, he will package/process the data by matching or encrypting it. Often they go as far as deleting stolen data from the victim's environment. After concealing his intrusion, the attacker will focus on extracting this data. To do this, the attacker usually uses a command and control (C2) channel that they have set up between themselves and the infected machines to extract the data stolen from them. They can also use an alternate channel.
+
+### Define technique and subtechnique, and give an example of each
+
+Remaining in the field of information exfiltration, the attacker can implement a technique to automate the exfiltration of data as he collects them.
+
+The attacker can implement sub-techniques in order to optimize his chances of success. Such as using a traffic duplication sub technique. Some network devices have a native feature that is Traffic mirroring. This feature is usually used for network analysis. It can also be used to duplicate data traffic to one or more destinations. 
+
+Therefore, attackers can use this feature to duplicate the network and redirect it to their infrastructures to get the information contained in the flow. This contributes to the automation of data extraction.
+
+### Define procedure, and give an example of each
+
+The procedure is defined by the way the attacker implements the different techniques and sub-techniques to carry out his attack against the victim. A procedure can be concerned one or more techniques and sub-techniques.
+
+If we take the example of an attacker who wants to exfiltrate the data he has collected, he can set up a technique to automate the data transfer in parallel to his collection. To do this, he will set up a traffic duplication in order to redirect the duplicated victim's traffic to his environment by using the Traffic mirroring feature that some network devices have.
+
+## Sources
+
+[MITRE | ATT&CK](https://attack.mitre.org/)
+
+[Exfiltration](https://attack.mitre.org/tactics/TA0010/)
+
+[Automated Exfiltration](https://attack.mitre.org/techniques/T1020/)
+
+[Automated Exfiltration: Traffic Duplication](https://attack.mitre.org/techniques/T1020/001/)
