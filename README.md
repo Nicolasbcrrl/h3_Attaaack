@@ -128,3 +128,30 @@ If we take the example of an attacker who wants to exfiltrate the data he has co
 [Automated Exfiltration](https://attack.mitre.org/techniques/T1020/)
 
 [Automated Exfiltration: Traffic Duplication](https://attack.mitre.org/techniques/T1020/001/)
+
+---------
+
+## Webgoat: A3 Sensitive data exposure - Insecure Login: 2 Let's try
+
+To start this exercise I had to use the Web goat application. For that I used the following command to start the application locally on my virtual machine.
+
+    $ java -jar webgoat-server-8.0.0.M26.jar
+  
+The **Insecure login** exercise requires the use of a packet sniffer. For this, I chose to install the open source software Wireshark.
+
+### Installation of Wireshark
+
+J'ai installé l'application Wireshark en utilisant la commande suivante : 
+
+    $ sudo apt install wireshark -y
+
+Ensuite, j'ai pu démarer l'application en utilisant la commande suivante : 
+
+    $ sudo wireshark
+
+### Insecure Login: 2 Let's try
+
+Pour trouver la bonne requête, il a fallu la déclancher en cliquant sur le boutton **login**. En cliquant sur ce boutton, une nouvelle requête apparue. Cette requette HTTP a attiré mon attention du fait que c'était une requête **POST** et elle avait dans sa description (text/plain).
+
+En cliquant sur la requête, j'ai pu voir ce quel contenait. 
+J'ai ensuite cliqué sur **Hypertext Transfer Protocol** et j'ai ensuite chercher dans le texte. J'ai pu trouver le nom d'utilisateur **CaptainJack** et son mots de passe **BlackPearl**. Ce qui était la réponse à l'exercie.
