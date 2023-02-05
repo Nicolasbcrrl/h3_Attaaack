@@ -141,17 +141,24 @@ The **Insecure login** exercise requires the use of a packet sniffer. For this, 
 
 ### Installation of Wireshark
 
-J'ai installé l'application Wireshark en utilisant la commande suivante : 
+I installed the Wireshark application using the following command: 
 
     $ sudo apt install wireshark -y
 
-Ensuite, j'ai pu démarer l'application en utilisant la commande suivante : 
+Then I was able to start the application using the following command:
 
     $ sudo wireshark
 
 ### Insecure Login: 2 Let's try
 
-Pour trouver la bonne requête, il a fallu la déclancher en cliquant sur le boutton **login**. En cliquant sur ce boutton, une nouvelle requête apparue. Cette requette HTTP a attiré mon attention du fait que c'était une requête **POST** et elle avait dans sa description (text/plain).
+To find the right query, we had to trigger it by clicking on the **login** button. When I clicked on this button, a new request appeared. This HTTP request caught my attention because it was a **POST** request and it had in its description (text/plain).
 
-En cliquant sur la requête, j'ai pu voir ce quel contenait. 
-J'ai ensuite cliqué sur **Hypertext Transfer Protocol** et j'ai ensuite chercher dans le texte. J'ai pu trouver le nom d'utilisateur **CaptainJack** et son mots de passe **BlackPearl**. Ce qui était la réponse à l'exercie.
+![POST](POST.PNG)
+
+By clicking on the request, I could see what it contained.
+
+![Hyper](hyperText.PNG)
+
+I then clicked on **Hypertext Transfer Protocol and then searched the text. I was able to find the username **CaptainJack** and his password **BlackPearl**. Which was the answer to the exercise.
+
+![information](information.PNG)
