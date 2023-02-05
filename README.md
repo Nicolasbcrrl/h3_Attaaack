@@ -159,7 +159,7 @@ By clicking on the request, I could see what it contained.
 
 ![Hyper](hyperText.PNG)
 
-I then clicked on **Hypertext Transfer Protocol and then searched the text. I was able to find the username** **CaptainJack** and his password **BlackPearl**. Which was the answer to the exercise.
+I then clicked on **Hypertext Transfer Protocol and then searched the text**. I was able to find the username **CaptainJack** and his password **BlackPearl**. Which was the answer to the exercise.
 
 ![information](information.PNG)
 
